@@ -28,7 +28,6 @@ function FormularioProducto({ productoInicial = null, modo = 'agregar' }) {
     // Obtener productos y funciones del contexto
     const { productos, agregarProducto, editarProducto } = useContext(ProductsContext);
 
-    // === CARGAR CATEGORÍAS DESDE TU BACKEND ===
     useEffect(() => {
         // categorías derivadas de productos
         const categoriasUnicas = [...new Set(productos.map(p => p.category))];
