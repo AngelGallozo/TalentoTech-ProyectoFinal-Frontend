@@ -14,7 +14,7 @@ export function AuthProvider({ children }) {
         if (id && username) {
             setUser({ id, username, type });
         } else {
-            setUser(null); // ya cargó y no hay usuario
+            setUser(null);
         }
     }, []);
 
