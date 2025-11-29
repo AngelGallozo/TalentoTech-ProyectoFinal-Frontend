@@ -13,7 +13,7 @@ function NavBar() {
     const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
     const navigate = useNavigate();
-    const location = useLocation(); // <-- usamos location para la ruta actual
+    const location = useLocation(); 
     const { user, logout } = useContext(AuthContext);
     const { busqueda, setBusqueda } = useSearch();
 
