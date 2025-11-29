@@ -7,7 +7,7 @@ export const CarritoContext = createContext();
 
 export function CarritoProvider({ children }) {
     const navigate = useNavigate();
-    const { user } = useContext(AuthContext);  // <--- LEEMOS user del contexto
+    const { user } = useContext(AuthContext); 
     const [cart, setCart] = useState([]);
 
     const removeFromCart = (productId) => {
